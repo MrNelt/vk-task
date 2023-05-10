@@ -7,6 +7,3 @@ run: build
 destroy:
 	docker-compose down
 
-test:
-	go test -v ./...
-
