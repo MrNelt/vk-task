@@ -17,7 +17,7 @@ func (h *HandlerCatchAnswer) CatchRight(ctx tele.Context) error {
 	message := ""
 	message += "✅ Верно!"
 	message += "\n\n"
-	message += "Начать заново /test"
+	message += "Начать заново /start"
 	return ctx.Send(message, h.keyboard)
 }
 
@@ -25,6 +25,6 @@ func (h *HandlerCatchAnswer) CatchWrong(ctx tele.Context) error {
 	message := ""
 	message += "❌ Неверно!"
 	message += "\n\n"
-	message += "Начать заново /test"
+	message += "Начать заново /start"
 	return ctx.Send(message, h.keyboard)
 }
